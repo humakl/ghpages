@@ -17,3 +17,98 @@ p {
 h1 {
 	font-size: 23px;
 }
+
+.moon {
+	position: relative;
+	width: 230px;
+	height: 230px;
+	padding: 10px;
+}
+
+.main {
+	position: absolute;
+	background-color: #ffffff;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.troon{
+	top: 0;
+	left: 0;
+	box-shadow:  10px 10px 3px #ff0000;
+}
+
+.tloon {
+  top: 0;
+  right: 0;
+	box-shadow:  -10px 10px 3px #ff0000;
+}
+
+.broon {
+  bottom: 0;
+  left: 0;
+	box-shadow:  10px -10px 3px #ff0000;
+}
+
+.bloon {
+  bottom: 0;
+  right: 0;
+	box-shadow:  -10px -10px 3px #ff0000;
+}
+.heart {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: pink;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+}
+.heart::after {
+  background-color: pink;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
+}
+.heart::before {
+  content: "";
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+}
+
+#croc {
+	animation-name: run;
+	animation-duration: 5s;
+	width: 100px;
+	height: 34px;
+}
+
+@keyframes run {
+	0% {
+		background-color: #ffffff;
+	}
+	25% {
+		background-color: #bbbbbb;
+	}
+	50% {
+		background-color: #888888;
+	}
+	75% {
+		background-color: #444444;
+	}
+	100% {
+		background-color: #000000;
+	}
