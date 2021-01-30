@@ -14,6 +14,10 @@ p {
 	text-transform: uppercase;
 }
 
+h1 {
+	font-size: 23px;
+}
+
 .moon {
 	position: relative;
 	width: 230px;
@@ -108,4 +112,3 @@ p {
 	100% {
 		background-color: #000000;
 	}
-}
